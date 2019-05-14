@@ -1,0 +1,17 @@
+.navbar {
+  justify-content: flex-start;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: red;
+}
+
+.dropdown-item {
+  color: black;
+}
+.dropdown-item:hover {
+  color: red;
+}
