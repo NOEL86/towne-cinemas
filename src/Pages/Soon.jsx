@@ -3,7 +3,7 @@ import NavBar from '../Components/Nav/nav';
 import Footer from '../Components/Footer/Footer';
 import './schedule.css';
 
-class Schedule extends Component {
+class Soon extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -29,7 +29,7 @@ class Schedule extends Component {
 
   render() {
     return (
-      <div id="black">
+      <div>
         <NavBar />
         <div className="row">
           <div className="col-md-12">
@@ -54,40 +54,13 @@ class Schedule extends Component {
 
         <div className="row">
           <div className="col-md-12">
-            <h1>Movie One{this.state.movieOne}</h1>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-4" />
-          <div className="col-md-4">
-            <p>
-              Friday & Monday-Thursday (May 10 & May 13-16) 4:30, 6:30 & 8:30
-              p.m. Saturday (May 11) 1:00, 3:00, 5:00, 7:00 & 9:00 p.m.
-            </p>
+            <h1>{this.state.movieOne}</h1>
           </div>
         </div>
 
         <div className="row">
           <div className="col-md-12">
-            <h1>Movie Two{this.state.movieTwo}</h1>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-4" />
-          <div className="col-md-4">
-            <p>
-              Friday & Monday-Thursday (May 10 & May 13-16) 4:30, 6:30 & 8:30
-              p.m. Saturday (May 11) 1:00, 3:00, 5:00, 7:00 & 9:00 p.m.
-            </p>
-          </div>
-        </div>
-        <div id="center" className="row">
-          <div className="col-md-4" />
-          <div className="col-md-4">
-            <p>
-              Towne Cinemas 120 West Main Street American Fork, UT 84003
-              801-756-3181
-            </p>
+            <h1>{this.state.movieTwo}</h1>
           </div>
         </div>
 
@@ -96,4 +69,4 @@ class Schedule extends Component {
     );
   }
 }
-export default Schedule;
+export default Soon;

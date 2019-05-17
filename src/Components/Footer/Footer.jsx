@@ -11,7 +11,7 @@ const Footer = props => (
       Towne Cinemas
     </a>
     <small>
-      <b>Where all movies are $1.50</b>
+      <b>Where all movies are $1.50!!</b>
     </small>
   </nav>
 );

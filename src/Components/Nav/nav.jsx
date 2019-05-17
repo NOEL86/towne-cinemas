@@ -4,8 +4,13 @@ import './nav.css';
 const NavBar = props => (
   <ul className="nav nav-pills bg-dark">
     <li className="nav-item">
-      <a className="nav-link active" href="#">
+      <a className="nav-link active" href="/">
         Home
+      </a>
+    </li>
+    <li className="nav-item">
+      <a className="nav-link" href="/qSchedule">
+        Quick Schedule
       </a>
     </li>
     <li className="nav-item dropdown">
@@ -20,32 +25,29 @@ const NavBar = props => (
         Movies
       </a>
       <div className="dropdown-menu">
-        <a className="dropdown-item" href="#">
+        <a className="dropdown-item" href="/one">
           Now Playing 1
         </a>
-        <a className="dropdown-item" href="#">
+        <a className="dropdown-item" href="/two">
           Now Playing 2
         </a>
       </div>
     </li>
     <li className="nav-item">
-      <a className="nav-link" href="#">
+      <a className="nav-link" href="/soon">
         Coming Soon
       </a>
     </li>
     <li className="nav-item">
-      <a className="nav-link" href="#">
+      <a className="nav-link" href="/advertising">
         Advertising Information
       </a>
     </li>
     <li className="nav-item">
-      <a className="nav-link" href="#">
+      <a className="nav-link" href="/rentals">
         Theater Rentals
       </a>
     </li>
-    {/* <li className="nav-item">
-  <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-</li> */}
   </ul>
 );
 
