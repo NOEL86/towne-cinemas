@@ -28,7 +28,8 @@ class Rentals extends Component {
         </div>
 
         <div className="row">
-          <div className="col-md-12">
+          <div className="col-md-3" />
+          <div className="col-md-6">
             <h5>
               Individuals or Groups may rent the theaters for private parties or
               special occasions. Below is a link to the rental agreement which
@@ -37,6 +38,7 @@ class Rentals extends Component {
               email us at townecinemaads@hotmail.com
             </h5>
           </div>
+          <div className="col-md-3" />
         </div>
 
         <div className="row">

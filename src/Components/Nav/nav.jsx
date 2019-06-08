@@ -31,6 +31,9 @@ const NavBar = props => (
         <a className="dropdown-item" href="/two">
           Now Playing 2
         </a>
+        <a className="dropdown-item" href="/three">
+          Now Playing 3
+        </a>
       </div>
     </li>
     <li className="nav-item">

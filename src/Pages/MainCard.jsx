@@ -29,18 +29,14 @@ const MainCard = props => (
           <h5>120 West Main St. American Fork, UT</h5>
         </div>
       </div>
+
       <div className="row">
         <div className="col-md-12">
           <img src="/505_Town_Cinemas.jpg" />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-md-12">
           <img src="/230_theatresm.jpg" />
         </div>
       </div>
     </div>
-
     <Footer />
   </div>
 );

@@ -3,7 +3,7 @@ import NavBar from '../Components/Nav/nav';
 import Footer from '../Components/Footer/Footer';
 import './schedule.css';
 
-class MovieTwo extends Component {
+class MovieThree extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -76,4 +76,4 @@ class MovieTwo extends Component {
     );
   }
 }
-export default MovieTwo;
+export default MovieThree;

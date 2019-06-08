@@ -1,5 +1,5 @@
 import React from 'react';
-import './footer.css';
+import '../Nav/nav.css';
 
 const Footer = props => (
   <nav
