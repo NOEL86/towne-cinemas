@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from '../Components/Nav/nav';
-import Footer from '../Components/Footer/Footer';
-import './schedule.css';
+// import './movies.css';
 
 class MovieTwo extends Component {
   constructor(props) {

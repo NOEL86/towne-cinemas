@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import NavBar from '../Components/Nav/nav';
-import Footer from '../Components/Footer/Footer';
 import './schedule.css';
 
 class Advertising extends Component {
@@ -14,7 +13,7 @@ class Advertising extends Component {
 
   render() {
     return (
-      <div>
+      <div className="addToBottom">
         <NavBar />
         <div className="row">
           <div className="col-md-12">
@@ -47,7 +46,7 @@ class Advertising extends Component {
             <a>Advertising Agreement</a>
           </div>
         </div>
-        <div className="row">
+        <div className="row bottom-padding">
           <div className="col-md-4" />
           <div className="col-md-4">
             <p>
@@ -58,7 +57,6 @@ class Advertising extends Component {
             </p>
           </div>
         </div>
-        <Footer />
       </div>
     );
   }

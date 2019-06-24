@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from '../Components/Nav/nav';
-import Footer from '../Components/Footer/Footer';
-import './schedule.css';
+// import './movies.css';
 
 class MovieThree extends Component {
   constructor(props) {
@@ -9,6 +8,7 @@ class MovieThree extends Component {
     this.state = {
       movieOne: '',
       movieTwo: '',
+      movieThree: '',
       times: [],
       rating: '',
       genre: [],

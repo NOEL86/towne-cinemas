@@ -14,7 +14,7 @@ class Rentals extends Component {
 
   render() {
     return (
-      <div>
+      <div className="addToBottom">
         <NavBar />
         <div className="row">
           <div className="col-md-12">
@@ -47,7 +47,7 @@ class Rentals extends Component {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row bottom-padding">
           <div className="col-md-12">
             <p>
               <b>
@@ -58,7 +58,7 @@ class Rentals extends Component {
           </div>
         </div>
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }

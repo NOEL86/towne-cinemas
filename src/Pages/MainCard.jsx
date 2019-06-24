@@ -1,7 +1,8 @@
 import React from 'react';
 import NavBar from '../Components/Nav/nav';
-import Footer from '../Components/Footer/Footer';
+// import Footer from '../Components/Footer/Footer';
 import './mainCard.css';
+// import '../Components/Footer/footer.css';
 
 const MainCard = props => (
   <div>
@@ -32,12 +33,12 @@ const MainCard = props => (
 
       <div className="row">
         <div className="col-md-12">
-          <img src="/505_Town_Cinemas.jpg" />
+          <img id="tCinemas" src="/505_Town_Cinemas.jpg" />
           <img src="/230_theatresm.jpg" />
         </div>
       </div>
     </div>
-    <Footer />
+    {/* <Footer /> */}
   </div>
 );
 

@@ -1,5 +1,17 @@
+html,
+body {
+  height: 100%;
+}
+
+/* #root {
+  margin-bottom: -60px;
+} */
+
 .App {
   text-align: center;
+  height: initial;
+  min-height: 100%;
+  /* footer height = 60px */
 }
 
 .App-logo {

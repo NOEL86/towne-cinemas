@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from '../Components/Nav/nav';
-import Footer from '../Components/Footer/Footer';
+// import Footer from '../Components/Footer/Footer';
 import './schedule.css';
 
 class Soon extends Component {
@@ -29,7 +29,7 @@ class Soon extends Component {
 
   render() {
     return (
-      <div>
+      <div className="addToBottom">
         <NavBar />
         <div className="row">
           <div className="col-md-12">
@@ -58,13 +58,13 @@ class Soon extends Component {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row bottom-padding">
           <div className="col-md-12">
             <h1>{this.state.movieTwo}</h1>
           </div>
         </div>
-
-        <Footer />
+        {/* 
+        <Footer /> */}
       </div>
     );
   }
