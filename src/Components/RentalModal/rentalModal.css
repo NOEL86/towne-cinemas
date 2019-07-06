@@ -4,3 +4,11 @@
 
 .modal-title {
 }
+
+#conditions {
+  font-size: 24px;
+}
+#signatureName {
+  font-family: "Cedarville Cursive", cursive;
+  text-align: center;
+}

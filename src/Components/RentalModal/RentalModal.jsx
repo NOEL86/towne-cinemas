@@ -113,10 +113,10 @@ const RentalModal = props => (
           </div>
         </div>
         <div className="col-md-12">
+          <p id="conditions">Conditions of Use</p>
           <p>
-            <b>Conditions of Use </b>
+            <b>Rental hours:</b>{" "}
           </p>
-          <p>Rental hours: </p>
           <p>
             Hours must run consecutively and include required time for
             management to open and close (1 hour minimum). Early arrivals will
@@ -195,6 +195,24 @@ const RentalModal = props => (
           </p>
         </div>
 
+        <div className="row d-flex justify-content-center">
+          <label htmlFor="signature">
+            {" "}
+            <i>Sign Here</i>
+          </label>
+        </div>
+        <div className="row d-flex justify-content-center">
+          <div className="col-md-12">
+            <input
+              type="text"
+              id="signatureName"
+              value={props.signatureName}
+              onChange={props.onChange}
+              name="signatureName"
+            />
+          </div>
+        </div>
+        <br />
         <div className="row d-flex justify-content-center">
           <div className="col-md-12">
             <button
