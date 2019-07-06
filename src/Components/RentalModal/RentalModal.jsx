@@ -99,6 +99,49 @@ const RentalModal = props => (
                   placeholder="Zip"
                 />
               </div>
+              <div className="form-row">
+                <div className="form-group col-md-9">
+                  <label htmlFor="phone">Phone</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="phone"
+                    value={props.phone}
+                    onChange={props.onChange}
+                    name="phone"
+                    placeholder="801-666-8888"
+                  />
+                </div>
+              </div>
+
+              <div className="form-row">
+                <div className="form-group col-md-9">
+                  <label htmlFor="fax">Fax</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="fax"
+                    value={props.fax}
+                    onChange={props.onChange}
+                    name="fax"
+                    placeholder="801-666-8888"
+                  />
+                </div>
+              </div>
+              <div className="form-row">
+                <div className="form-group col-md-9">
+                  <label htmlFor="email">Email</label>
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="email"
+                    value={props.email}
+                    onChange={props.onChange}
+                    name="email"
+                    placeholder="this@gmail.com"
+                  />
+                </div>
+              </div>
             </div>
           </form>
         </div>

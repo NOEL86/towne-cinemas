@@ -14,7 +14,13 @@ class Rentals extends Component {
       address: "",
       addressTwo: "",
       zip: "",
-      state: ""
+      state: "",
+      signatureName: "",
+      date: "",
+      time: "",
+      guestNumber: 0,
+      cost: 0,
+      email: ""
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -29,6 +35,7 @@ class Rentals extends Component {
 
     let userObj = {
       name: this.state.name,
+      email: this.state.email,
       organization: this.state.organization,
       address: this.state.address,
       addressTwo: this.state.addressTwo,
