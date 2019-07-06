@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from '../Components/Nav/nav';
+import RentalModal from '../Components/RentalModal/RentalModal';
 import Footer from '../Components/Footer/Footer';
 import './schedule.css';
 
@@ -10,7 +11,12 @@ class Rentals extends Component {
 
     // this.handleClick = this.handleClick.bind(this);
   }
-  componentDidMount() {}
+  componentDidMount() {
+    console.log('I have a modal');
+  }
+  // $('#myModal').on('shown.bs.modal', function () {
+  //   $('#myInput').trigger('focus')
+  // })
 
   render() {
     return (
@@ -43,7 +49,15 @@ class Rentals extends Component {
 
         <div className="row">
           <div className="col-md-12">
-            <a>Rental Agreement</a>
+          <button
+            value="rentalModal"
+            className="button"
+            data-toggle="modal"
+            data-target="#sendNowModal">
+            Rental Agreement
+          </button>
+
+  
           </div>
         </div>
 
@@ -57,8 +71,14 @@ class Rentals extends Component {
             </p>
           </div>
         </div>
-
-        {/* <Footer /> */}
+        <RentalModal
+          // onChange={this.handleInputChange}
+          // onClick={this.handleSendSubmit}
+          // receiver={this.state.receiver}
+          // phoneNum={this.state.phoneNum}
+          // status={this.state.condition}
+          // comment={this.state.comment}
+          />
       </div>
     );
   }
