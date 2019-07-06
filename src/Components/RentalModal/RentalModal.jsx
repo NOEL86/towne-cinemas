@@ -141,7 +141,7 @@ const RentalModal = props => (
               {/*  I NEED A DATE PICKER HERE!! */}
             </div>
 
-            <div className="form-group col-md-3">
+            <div className="form-group col-md-6">
               <label htmlFor="guests"># of Guests (estimate)</label>
               <input
                 type="text"
@@ -153,7 +153,7 @@ const RentalModal = props => (
                 placeholder="Est."
               />
             </div>
-            <div className="form-group col-md-3">
+            <div className="form-group col-md-6">
               <label htmlFor="guests">Cost = # Hours x $40 Rental Fee</label>
               <input
                 type="text"
@@ -166,7 +166,9 @@ const RentalModal = props => (
               />
             </div>
 
-            <div className="form-group col-md-3">{props.cost}</div>
+            <div className="form-group col-md-3">
+              <p>Cost: {props.cost}</p>
+            </div>
           </form>
         </div>
 
