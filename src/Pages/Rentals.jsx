@@ -1,27 +1,38 @@
-import React, { Component } from 'react';
-import NavBar from '../Components/Nav/nav';
-import RentalModal from '../Components/RentalModal/RentalModal';
-import Footer from '../Components/Footer/Footer';
-import './schedule.css';
+import React, { Component } from "react";
+import NavBar from "../Components/Nav/nav";
+import RentalModal from "../Components/RentalModal/RentalModal";
+import Footer from "../Components/Footer/Footer";
+import "./schedule.css";
 
 class Rentals extends Component {
   constructor(props) {
     super(props);
     this.state = {};
 
-    // this.handleClick = this.handleClick.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this);
   }
   componentDidMount() {
-    console.log('I have a modal');
+    // console.log("I have a modal");
   }
-  // $('#myModal').on('shown.bs.modal', function () {
-  //   $('#myInput').trigger('focus')
-  // })
+
+  handleClick() {
+    console.log("button clicked");
+  }
+
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    console.log(name, value);
+    this.setState({
+      [name]: value
+    });
+  };
 
   render() {
     return (
       <div className="addToBottom">
         <NavBar />
+
         <div className="row">
           <div className="col-md-12">
             <h1>Towne Cinemas</h1>
@@ -49,15 +60,14 @@ class Rentals extends Component {
 
         <div className="row">
           <div className="col-md-12">
-          <button
-            value="rentalModal"
-            className="button"
-            data-toggle="modal"
-            data-target="#sendNowModal">
-            Rental Agreement
-          </button>
-
-  
+            <button
+              value="rentalModal"
+              className="button"
+              data-toggle="modal"
+              data-target="#rentalModal"
+            >
+              Rental Agreement
+            </button>
           </div>
         </div>
 
@@ -72,13 +82,13 @@ class Rentals extends Component {
           </div>
         </div>
         <RentalModal
-          // onChange={this.handleInputChange}
-          // onClick={this.handleSendSubmit}
+          onChange={this.handleInputChange}
+          onClick={this.handleClick}
           // receiver={this.state.receiver}
           // phoneNum={this.state.phoneNum}
           // status={this.state.condition}
           // comment={this.state.comment}
-          />
+        />
       </div>
     );
   }
