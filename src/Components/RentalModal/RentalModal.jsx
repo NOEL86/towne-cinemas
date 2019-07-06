@@ -99,50 +99,74 @@ const RentalModal = props => (
                   placeholder="Zip"
                 />
               </div>
-              <div className="form-row">
-                <div className="form-group col-md-9">
-                  <label htmlFor="phone">Phone</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="phone"
-                    value={props.phone}
-                    onChange={props.onChange}
-                    name="phone"
-                    placeholder="801-666-8888"
-                  />
-                </div>
+
+              <div className="form-group col-md-6">
+                <label htmlFor="phone">Phone</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="phone"
+                  value={props.phone}
+                  onChange={props.onChange}
+                  name="phone"
+                  placeholder="801-666-8888"
+                />
               </div>
 
-              <div className="form-row">
-                <div className="form-group col-md-9">
-                  <label htmlFor="fax">Fax</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="fax"
-                    value={props.fax}
-                    onChange={props.onChange}
-                    name="fax"
-                    placeholder="801-666-8888"
-                  />
-                </div>
+              <div className="form-group col-md-6">
+                <label htmlFor="fax">Fax</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="fax"
+                  value={props.fax}
+                  onChange={props.onChange}
+                  name="fax"
+                  placeholder="801-666-8888"
+                />
               </div>
-              <div className="form-row">
-                <div className="form-group col-md-9">
-                  <label htmlFor="email">Email</label>
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="email"
-                    value={props.email}
-                    onChange={props.onChange}
-                    name="email"
-                    placeholder="this@gmail.com"
-                  />
-                </div>
+
+              <div className="form-group col-md-6">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="email"
+                  value={props.email}
+                  onChange={props.onChange}
+                  name="email"
+                  placeholder="this@gmail.com"
+                />
               </div>
+              {/*  I NEED A DATE PICKER HERE!! */}
             </div>
+
+            <div className="form-group col-md-3">
+              <label htmlFor="guests"># of Guests (estimate)</label>
+              <input
+                type="text"
+                className="form-control"
+                id="guests"
+                value={props.guestNumber}
+                onChange={props.onChange}
+                name="guestNumber"
+                placeholder="Est."
+              />
+            </div>
+            <div className="form-group col-md-3">
+              <label htmlFor="guests">Cost = # Hours x $40 Rental Fee</label>
+              <input
+                type="text"
+                className="form-control"
+                id="guests"
+                value={props.guestNumber}
+                onChange={props.onChange}
+                name="guestNumber"
+                placeholder="Est."
+              />
+            </div>
+
+            <div className="form-group col-md-3">{props.cost}</div>
           </form>
         </div>
 
