@@ -7,17 +7,41 @@ import "./schedule.css";
 class Rentals extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      name: "",
+      phone: "",
+      organization: "",
+      address: "",
+      addressTwo: "",
+      zip: "",
+      state: ""
+    };
 
-    this.handleClick = this.handleClick.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
   }
   componentDidMount() {
     // console.log("I have a modal");
   }
 
-  handleClick() {
+  handleSubmit() {
     console.log("button clicked");
+
+    let userObj = {
+      name: this.state.name,
+      organization: this.state.organization,
+      address: this.state.address,
+      addressTwo: this.state.addressTwo,
+      city: this.state.city,
+      state: this.state.state,
+      phone: this.state.phone,
+      date: this.state.rentalDate,
+      time: this.state.rentalTime,
+      guestNum: this.state.guestNumber,
+      cost: this.state.costCalc
+    };
+
+    console.log("This is my user object going to the backend", userObj);
   }
 
   handleInputChange = event => {
@@ -83,7 +107,8 @@ class Rentals extends Component {
         </div>
         <RentalModal
           onChange={this.handleInputChange}
-          onClick={this.handleClick}
+          onClick={this.handleSubmit}
+
           // receiver={this.state.receiver}
           // phoneNum={this.state.phoneNum}
           // status={this.state.condition}
