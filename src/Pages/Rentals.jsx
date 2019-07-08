@@ -20,13 +20,15 @@ class Rentals extends Component {
       time: "",
       guestNumber: 0,
       cost: 0,
+      hours: 0,
       email: ""
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.figureCost = this.figureCost.bind(this);
   }
-  componentDidMount() {
+  componentDidUpdate() {
     // console.log("I have a modal");
   }
 
@@ -45,7 +47,7 @@ class Rentals extends Component {
       date: this.state.rentalDate,
       time: this.state.rentalTime,
       guestNum: this.state.guestNumber,
-      cost: this.state.costCalc
+      cost: this.state.cost
     };
 
     console.log("This is my user object going to the backend", userObj);
@@ -56,6 +58,26 @@ class Rentals extends Component {
     console.log(name, value);
     this.setState({
       [name]: value
+    });
+
+    if (this.state.hours) {
+      console.log("I made it to figure cost func");
+      this.figureCost();
+    }
+  };
+
+  // componentDidUpdate(prevProps, prevState) {
+  //   console.log(prevProps, prevState);
+  //   this.figureCost();
+  // }
+  figureCost = () => {
+    //need this to update and show the cost if you need to go back and adjust
+    console.log(this.state.hours);
+    let numHours = this.state.hours;
+    let updatedCost = numHours * 40;
+
+    this.setState({
+      cost: updatedCost
     });
   };
 
@@ -115,7 +137,8 @@ class Rentals extends Component {
         <RentalModal
           onChange={this.handleInputChange}
           onClick={this.handleSubmit}
-
+          onCostUpdate={this.onCostUpdate}
+          cost={this.state.cost}
           // receiver={this.state.receiver}
           // phoneNum={this.state.phoneNum}
           // status={this.state.condition}

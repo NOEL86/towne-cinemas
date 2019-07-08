@@ -140,34 +140,35 @@ const RentalModal = props => (
               </div>
               {/*  I NEED A DATE PICKER HERE!! */}
             </div>
-
-            <div className="form-group col-md-6">
-              <label htmlFor="guests"># of Guests (estimate)</label>
-              <input
-                type="text"
-                className="form-control"
-                id="guests"
-                value={props.guestNumber}
-                onChange={props.onChange}
-                name="guestNumber"
-                placeholder="Est."
-              />
+            <div className="form-row">
+              <div className="form-group col-md-6">
+                <label htmlFor="hours"># of Hours</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="hours"
+                  value={props.hours}
+                  onChange={props.onChange}
+                  name="hours"
+                  placeholder="# of Hours"
+                />
+              </div>
+              <div className="form-group col-md-6">
+                <label htmlFor="guests"># of Guests</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="guests"
+                  value={props.guestNumber}
+                  onChange={props.onChange}
+                  name="guestNumber"
+                  placeholder="# of Guests"
+                />
+              </div>
             </div>
-            <div className="form-group col-md-6">
-              <label htmlFor="guests">Cost = # Hours x $40 Rental Fee</label>
-              <input
-                type="text"
-                className="form-control"
-                id="guests"
-                value={props.guestNumber}
-                onChange={props.onChange}
-                name="guestNumber"
-                placeholder="Est."
-              />
-            </div>
-
-            <div className="form-group col-md-3">
-              <p>Cost: {props.cost}</p>
+            <div className="form-group col-md-12">
+              <p>Cost = # Hours * $40 per Hour </p>
+              <p>Estimated Cost: ${props.cost}</p>
             </div>
           </form>
         </div>
