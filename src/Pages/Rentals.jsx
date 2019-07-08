@@ -66,8 +66,8 @@ class Rentals extends Component {
     }
   };
 
-  // componentDidUpdate(prevProps, prevState) {
-  //   console.log(prevProps, prevState);
+  // componentWillUpdate() {
+  //   // console.log(prevProps, prevState);
   //   this.figureCost();
   // }
   figureCost = () => {
