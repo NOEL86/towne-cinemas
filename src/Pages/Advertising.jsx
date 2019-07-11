@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import NavBar from '../Components/Nav/nav';
-import './schedule.css';
+import React, { Component } from "react";
+import NavBar from "../Components/Nav/nav";
+import AdvertisingModal from "../Components/AdvertisingModal/AdvertisingModal";
+import "./schedule.css";
 
 class Advertising extends Component {
   constructor(props) {
@@ -15,13 +16,14 @@ class Advertising extends Component {
     return (
       <div className="addToBottom">
         <NavBar />
+        <AdvertisingModal />
         <div className="row">
           <div className="col-md-12">
             <h1>Towne Cinemas On-Screen Advertising</h1>
           </div>
         </div>
 
-        <div className="row" style={{ textAlign: 'center' }}>
+        <div className="row" style={{ textAlign: "center" }}>
           <div className="col-md-3" />
           <div className="col-md-6">
             <p>
@@ -30,15 +32,29 @@ class Advertising extends Component {
                 for your business or event!! Click on the links below for
                 information and rates. The advertising agreement is also linked
                 when you are ready to start the advertising. If you need more
-                information please call (801) 368-2289 or email us at{' '}
+                information please call (801) 368-2289 or email us at{" "}
               </b>
             </p>
-            <a>email link here</a>
+            <a
+              id="email"
+              href="mailto:townecinemaads@hotmail.com"
+              editor_id="mce_editor_0"
+            >
+              <b>townecinemaads@hotmail.com</b>
+            </a>
           </div>
         </div>
+        <br />
         <div className="row">
           <div className="col-md-12">
-            <a>Advertising Rates</a>
+            <a
+              value="advertisingModal"
+              className="btn btn-success"
+              data-toggle="modal"
+              data-target="#advertisingModal"
+            >
+              Advertising Rates
+            </a>
           </div>
         </div>
         <div className="row">

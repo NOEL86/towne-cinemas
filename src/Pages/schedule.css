@@ -1,5 +1,5 @@
 #scheduleTitle {
-  background-color: 'red';
+  background-color: "red";
 }
 #center {
   text-align: center;
@@ -14,6 +14,11 @@
 
 .addToBottom {
   padding-bottom: 35%;
+}
+
+#email {
+  color: rgb(15, 15, 95);
+  text-decoration: none;
 }
 /* #footer {
   position: absolute;

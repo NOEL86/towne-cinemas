@@ -114,8 +114,9 @@ class Rentals extends Component {
         <div className="row">
           <div className="col-md-12">
             <button
+              // id="agreementButton"
               value="rentalModal"
-              className="button"
+              class="btn btn-danger"
               data-toggle="modal"
               data-target="#rentalModal"
             >
