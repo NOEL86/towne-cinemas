@@ -39,13 +39,14 @@ class Advertising extends Component {
               id="email"
               href="mailto:townecinemaads@hotmail.com"
               editor_id="mce_editor_0"
+              style={{ marginBottom: "10px" }}
             >
               <b>townecinemaads@hotmail.com</b>
             </a>
           </div>
         </div>
-        <br />
-        <div className="row">
+
+        <div className="row" style={{ marginBottom: "5px" }}>
           <div className="col-md-12">
             <a
               value="advertisingModal"
@@ -57,9 +58,17 @@ class Advertising extends Component {
             </a>
           </div>
         </div>
+
         <div className="row">
           <div className="col-md-12">
-            <a>Advertising Agreement</a>
+            <a
+              value="advertisingModal"
+              className="btn btn-warning"
+              data-toggle="modal"
+              data-target="#advertisingModal"
+            >
+              Advertising Agreement
+            </a>
           </div>
         </div>
         <div className="row bottom-padding">
