@@ -1,13 +1,13 @@
-import React from 'react';
-import NavBar from '../Components/Nav/nav';
+import React from "react";
+import NavBar from "../Components/Nav/nav";
 // import Footer from '../Components/Footer/Footer';
-import './mainCard.css';
+import "./mainCard.css";
 // import '../Components/Footer/footer.css';
 
 const MainCard = props => (
   <div>
     <NavBar />
-    <div className="card">
+    <div className="card main">
       <div id="header" className="row">
         <div className="col-med-12">
           <h1>Towne Cinemas</h1>
@@ -38,7 +38,6 @@ const MainCard = props => (
         </div>
       </div>
     </div>
-    {/* <Footer /> */}
   </div>
 );
 

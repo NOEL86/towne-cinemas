@@ -1,7 +1,7 @@
-.card {
+.main {
   background-color: black;
-  padding-bottom: 7%;
   color: white;
+  min-height: 100vh;
 }
 #saying {
   color: red;

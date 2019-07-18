@@ -7,14 +7,14 @@
 #black {
   background-color: black;
   color: white;
-
+  min-height: 100vh;
   /* padding-bottom: 10%; */
   /* height: 100%; */
 }
 
-.addToBottom {
+/* .addToBottom {
   padding-bottom: 25%;
-}
+} */
 
 #email {
   color: rgb(15, 15, 95);
