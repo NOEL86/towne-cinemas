@@ -28,8 +28,10 @@ class Rentals extends Component {
     this.handleInputChange = this.handleInputChange.bind(this);
     this.figureCost = this.figureCost.bind(this);
   }
-  componentDidUpdate() {
-    // console.log("I have a modal");
+  componentDidUpdate(prevProps, prevState) {
+    if (this.state.hours !== prevState.hours) {
+      this.figureCost();
+    }
   }
 
   handleSubmit() {
@@ -56,20 +58,18 @@ class Rentals extends Component {
   handleInputChange = event => {
     const { name, value } = event.target;
     console.log(name, value);
-    this.setState({
+    this.setState(() => ({
       [name]: value
-    });
-
-    if (this.state.hours) {
-      console.log("I made it to figure cost func");
-      this.figureCost();
-    }
+    }));
   };
 
-  // componentWillUpdate() {
-  //   // console.log(prevProps, prevState);
-  //   this.figureCost();
+  // shouldComponentUpdate(nextState) {
+  //   console.log("I got to this function");
+  //   if (this.state.hours !== this.nextState.hours) {
+  //     this.figureCost(this.state.hours);
+  //   }
   // }
+
   figureCost = () => {
     //need this to update and show the cost if you need to go back and adjust
     console.log(this.state.hours);
@@ -116,7 +116,7 @@ class Rentals extends Component {
             <button
               // id="agreementButton"
               value="rentalModal"
-              class="btn btn-danger"
+              className="btn btn-danger"
               data-toggle="modal"
               data-target="#rentalModal"
             >
